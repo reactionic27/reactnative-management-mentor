@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "50891647616",
+    "project_id": "firebase-ileader"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50891647616:android:d63f1434eceadc0c",
+        "android_client_info": {
+          "package_name": "com.ileaderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXkfdR9PFpH5XI8HwaFvUf9zOLShDlZBc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-80510026-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

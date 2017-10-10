@@ -1,0 +1,109 @@
+{
+  "name": "iLeaderApp",
+  "version": "0.0.12",
+  "private": true,
+  "jest": {
+    "scriptPreprocessor": "jestSupport/scriptPreprocess.js",
+    "setupEnvScriptFile": "./node_modules/react-native/jestSupport/env.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "react-addons-test-utils",
+      "react-native-router-flux",
+      "promise",
+      "source-map",
+      "key-mirror",
+      "immutable",
+      "fetch",
+      "redux",
+      "redux-thunk",
+      "fbjs"
+    ],
+    "collectCoverage": false,
+    "verbose": true,
+    "testPathDirs": [
+      "src/"
+    ]
+  },
+  "scripts": {
+    "test": "rm -rf ./node_modules/jest-cli/.haste_cache && jest ",
+    "start": "react-native start",
+    "test:watch": "npm run test -- --watch",
+    "test-chrome": "node-debug --preload false --nodejs --harmony jest --runInBand",
+    "docs": "./node_modules/docker/docker -w -i src/ -o ../snowflake-pages "
+  },
+  "dependencies": {
+    "apsl-react-native-button": "git+https://github.com/mat2maa/react-native-button.git",
+    "babel-core": "^6.7.4",
+    "htmlparser": "^1.7.7",
+    "immutable": "^3.7.6",
+    "key-mirror": "^1.0.1",
+    "moment": "^2.13.0",
+    "react": "~15.3.1",
+    "react-addons-pure-render-mixin": "^15.2.0",
+    "react-addons-test-utils": "^15.2.0",
+    "react-immutable-proptypes": "^1.7.1",
+    "react-mixin": "^2.0.2",
+    "react-native": "^0.33.0",
+    "react-native-button": "git+https://github.com/mat2maa/react-native-button.git",
+    "react-native-collapsible": "^0.6.0",
+    "react-native-cookies": "^1.0.2",
+    "react-native-custom-segmented-control": "^3.0.7",
+    "react-native-datepicker": "git+https://github.com/mat2maa/react-native-datepicker.git",
+    "react-native-drawer": "git+https://github.com/root-two/react-native-drawer.git",
+    "react-native-elements": "^0.9.2",
+    "react-native-floating-label": "git+https://github.com/mat2maa/rn-floating-label.git",
+    "react-native-gifted-spinner": "git+https://github.com/FaridSafi/react-native-gifted-spinner.git",
+    "react-native-image-picker": "git+https://github.com/marcshilling/react-native-image-picker.git",
+    "react-native-keyboard-aware-scroll-view": "git+https://github.com/mat2maa/react-native-keyboard-aware-scroll-view.git#ancestor_check",
+    "react-native-linear-gradient": "^1.5.11",
+    "react-native-mail": "^0.2.4",
+    "react-native-picker": "git+https://github.com/mat2maa/react-native-picker.git",
+    "react-native-push-notification": "^2.1.0",
+    "react-native-radio-buttons": "^0.11.0",
+    "react-native-router-flux": "^3.30.3",
+    "react-native-scrollable-mixin": "^1.0.1",
+    "react-native-scrollable-tab-view": "^0.5.1",
+    "react-native-simple-gesture": "0.0.2",
+    "react-native-simple-store": "^0.1.0",
+    "react-native-simpledialog-android": "^1.0.7",
+    "react-native-spring-carousel": "^0.3.4",
+    "react-native-swipe-list-view": "^0.2.2",
+    "react-native-tab-navigator": "^0.3.3",
+    "react-native-timer": "^1.1.3",
+    "react-native-vector-icons": "^2.1.0",
+    "react-redux": "^4.4.5",
+    "react-string-replace": "^0.3.2",
+    "react-timer-mixin": "^0.13.3",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.0.1",
+    "regenerator": "^0.8.42",
+    "reselect": "^2.5.4",
+    "tcomb-form-native": "^0.5.1",
+    "tinycolor2": "^1.3.0",
+    "titleize": "^1.0.0",
+    "underscore": "^1.8.3",
+    "validate.js": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-jest": "^6.0.1",
+    "docker": "^0.2.14",
+    "istanbul": "^0.4.2",
+    "jest-cli": "^0.8.2",
+    "react": "^0.14.7",
+    "react-addons-test-utils": "^0.14.7",
+    "react-native-cli": "^0.1.10"
+  }
+}
